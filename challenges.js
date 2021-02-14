@@ -125,6 +125,7 @@ function init() {
     document.querySelector('.player-0-panel').classList.add('active');
     
     document.querySelector('.final-score').disabled = false;
+    document.querySelector('.final-score').value = '';
 }
 
 function hideDice() {
