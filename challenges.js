@@ -78,6 +78,7 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
             hideDice();
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
             document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
+            document.querySelector('.final-score').disabled = true;
             gamePlaying = false;
         } else {
             // Next Player
@@ -122,6 +123,8 @@ function init() {
     document.querySelector('.player-0-panel').classList.remove('active');
     document.querySelector('.player-1-panel').classList.remove('active');
     document.querySelector('.player-0-panel').classList.add('active');
+    
+    document.querySelector('.final-score').disabled = false;
 }
 
 function hideDice() {
